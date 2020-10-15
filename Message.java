@@ -35,11 +35,6 @@ public class Message implements Serializable {
 		private String text;
 		private Object data;
 
-		public MessageBuilder(String text, Object data) {
-			this.text = text;
-			this.data = data;
-		}
-
 		public MessageBuilder setText(String text) {
 			this.text = text;
 			return this;

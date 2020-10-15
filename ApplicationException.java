@@ -1,3 +1,5 @@
+package org.vrex.sprint.rngesus.util;
+
 import org.springframework.http.HttpStatus;
 
 public class ApplicationException extends RuntimeException {
@@ -32,11 +34,6 @@ public class ApplicationException extends RuntimeException {
 
 		private String errorMessage;
 		private HttpStatus status;
-
-		public ExceptionBuilder(String errorMessage, HttpStatus status) {
-			this.errorMessage = errorMessage;
-			this.status = status;
-		}
 
 		public ExceptionBuilder setErrorMessage(String errorMessage) {
 			this.errorMessage = errorMessage;
