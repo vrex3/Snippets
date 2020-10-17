@@ -1,0 +1,21 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: <gmail-username>
+    password: <gmail-password>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
+//////////////////
+*********************
+/////////////////
+
+IMPORTANT -
+
+This will NOT work if the 'Allow Less Secure App' feature is turned off for the sending account. Switch it ON here - https://myaccount.google.com/lesssecureapps
